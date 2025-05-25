@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devopsproject
+spec:
+  replicas: 2
+
+  # Tells Kubernetes which Pods this Deployment manages
+  selector:
+    matchLabels:
+      app: devops-project
+
+  # Template for each Pod created by the Deployment
+  template:
+    metadata:
+      labels:
+        app: devops-project  # This label must match the selector above
+    spec:
+      containers:
+        # First container: Your application
+        - name: app-container
+          image: synapsenet/devops-project:latest
+          ports:
+            - containerPort: 5000
+
+        # Second container: Nginx
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80

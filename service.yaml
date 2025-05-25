@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: devopsproject-service
+spec:
+  type: NodePort
+  # This service will route traffic to Pods named hello_world
+  selector:
+    app: devops-project  # same as pod name in deployment-selector
+
+  ports:
+    - port: 5000 #Internal URL
+      targetPort: 5000  #Container Listeneing
+      nodePort: 30002   # External Port (for our access)
