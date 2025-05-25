@@ -1,0 +1,16 @@
+TO RUN THIS PROJECT
+have 3 separate terminals open
+
+T1: 
+    JENKINS
+    sudo  minikube service jenkins-service -n jenkins
+
+T2:
+    NGROK JENKINS FOR WEBHOOK
+    ngrok http 54650 (keeps changing)
+
+    change webhook value in github
+
+T3: 
+    PORT FORWARDING
+    sudo kubectl port-forward service/devopsproject-service  1111:5000
