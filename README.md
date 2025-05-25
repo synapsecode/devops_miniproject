@@ -60,3 +60,34 @@ exit
 jenkins dashbaord -> manage jenkins -> credentials -> global -> add new credentials 
     add dockerhub details
 
+Create a new Config
+    Select Git
+    Add Reposotory URL and credentials
+    select Git SCM polling
+    Save
+
+
+ngrok http 52938
+
+Go to GithubRepo > settings > WebHook > add
+    URL:  https://45e2-2405-201-d036-2841-dc98-815-b7a6-7292.ngrok-free.app/github-webhook/
+
+
+
+Edit Project Build Section on Jenkins
+
+- Add Build Step > Execute Shell
+```
+#!/bin/bash
+
+echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+docker build -t docker.io/synapsenet/devops-project:latest .
+docker push docker.io/synapsenet/devops-project:latest
+kubectl rollout restart deployment devopsproject -n default
+```
+
+Add DOCKER_USER, DOCKER_PASS bindings to Configure > Environemnt
+
+
+
+jenkins start: sudo  minikube service jenkins-service -n jenkins
