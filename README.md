@@ -47,9 +47,8 @@ now, to get the secret we must go and get it from
 	•	GitHub Integration
 
 
-
 Install docker and kubectl tools also inside the jenkins container
-    kubectl exec -it jenkins-d85d9688-5xpjp -n jenkins -- bash
+    kubectl exec -it jenkins-d85d9688-c9sz6 -n jenkins -- bash
 
 apt-get update && apt-get install -y docker.io curl
 curl -LO "https://dl.k8s.io/release/v1.33.1/bin/linux/amd64/kubectl"
@@ -89,5 +88,14 @@ kubectl rollout restart deployment devopsproject -n default
 Add DOCKER_USER, DOCKER_PASS bindings to Configure > Environemnt
 
 
-
 jenkins start: sudo  minikube service jenkins-service -n jenkins
+
+
+### Regaining Jenkins Access (Wipe-password)
+kubectl exec -n jenkins -it jenkins-d85d9688-5xpjp -- mkdir -p /var/jenkins_home/init.groovy.d
+kubectl cp create_admin_user.groovy jenkins/jenkins-d85d9688-5xpjp:/var/jenkins_home/init.groovy.d/create_admin_user.groovy
+kubectl delete pod jenkins-d85d9688-5xpjp -n jenkins
+
+### Jenkins Details
+manas
+~1qaz2wsx

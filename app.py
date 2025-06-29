@@ -19,7 +19,7 @@ def hello():
 
     <!-- Sidebar -->
     <aside class="w-64 bg-white shadow-lg hidden sm:block">
-        <div class="p-6 text-xl font-bold text-gray-800 border-b">DEVOPS PROJECT</div>
+        <div class="p-6 text-xl font-bold text-gray-800 border-b">DEVOPS PROJECT!!!!</div>
         <nav class="p-4 space-y-2">
             <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a>
             <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Profile</a>
