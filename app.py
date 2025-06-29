@@ -19,7 +19,7 @@ def hello():
 
     <!-- Sidebar -->
     <aside class="w-64 bg-white shadow-lg hidden sm:block">
-        <div class="p-6 text-xl font-bold text-gray-800 border-b">DEVOPS PROJECT!!!!</div>
+        <div class="p-6 text-xl font-bold text-gray-800 border-b">DEVOPS PROJECT!</div>
         <nav class="p-4 space-y-2">
             <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Dashboard</a>
             <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100">Profile</a>
@@ -43,7 +43,7 @@ def hello():
         <main class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white rounded-xl shadow p-4">
                 <h2 class="font-semibold text-lg text-gray-800">Card 1</h2>
-                <p class="text-sm text-gray-600 mt-2">This is a sample dashboard card.</p>
+                <p class="text-sm text-gray-600 mt-2">This project uses Docker, Minikube, Kubernetes, Jenkins and more</p>
             </div>
             <div class="bg-white rounded-xl shadow p-4">
                 <h2 class="font-semibold text-lg text-gray-800">Card 2</h2>
