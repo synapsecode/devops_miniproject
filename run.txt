@@ -6,7 +6,7 @@ T1:
     sudo  minikube service jenkins-service -n jenkins
 
 T2:
-    ngrok http 58333 (keeps changing)
+    ngrok http 57749 (keeps changing)
     change webhook value in github
 
 T3: 
