@@ -45,14 +45,6 @@ def hello():
                 <h2 class="font-semibold text-lg text-gray-800">Card 1</h2>
                 <p class="text-sm text-gray-600 mt-2">This project uses Docker, Minikube, Kubernetes, Jenkins and more</p>
             </div>
-            <div class="bg-white rounded-xl shadow p-4">
-                <h2 class="font-semibold text-lg text-gray-800">Card 2</h2>
-                <p class="text-sm text-gray-600 mt-2">You can add any content here.</p>
-            </div>
-            <div class="bg-white rounded-xl shadow p-4">
-                <h2 class="font-semibold text-lg text-gray-800">Card 3</h2>
-                <p class="text-sm text-gray-600 mt-2">Graphs, data, actions, etc.</p>
-            </div>
         </main>
     </div>
 
