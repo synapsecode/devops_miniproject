@@ -1,5 +1,7 @@
 # DevOps Project Documentation
 
+[Demo Video](./devops.mp4)
+
 ## Docker Commands
 
 ### Build Docker Image
