@@ -32,7 +32,7 @@ def hello():
     <div class="flex-1 flex flex-col">
         <!-- Navbar -->
         <header class="bg-white shadow p-4 flex justify-between items-center">
-            <h1 class="text-xl font-semibold text-gray-700">Dashboard of 01 July! 10:30AMs</h1>
+            <h1 class="text-xl font-semibold text-gray-700">HEKLLLLLLOOOOs</h1>
             <div class="flex items-center gap-3">
                 <span class="text-sm text-gray-500">Hello, User</span>
                 <img src="https://i.pravatar.cc/32" alt="User Avatar" class="rounded-full w-8 h-8" />
